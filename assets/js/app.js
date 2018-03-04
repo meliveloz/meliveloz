@@ -95,4 +95,39 @@ $(document).ready(function()
   });
 });
 
-                       
+$('.about-me').on('click', function(){
+  $('.first-section').addClass('hidden');
+ $('.second-section').removeClass('hidden');
+})
+
+
+$('.home').on('click', function(){
+  $('.first-section').removeClass('hidden');
+ $('.second-section').addClass('hidden');
+})
+$('.contactMe').on('click', function(){
+  $('.first-section').addClass('hidden');
+ $('.second-section').addClass('hidden');
+ $('.five-section').removeClass('hidden');
+})
+
+  $(function(){
+  setTimeout(function() {
+     $('#splash').fadeOut(500);
+  }, 2000);
+  });
+
+ /* Opacity Logo*/ 
+
+$(window).scroll(function() {
+  var scrollTop = $(this).scrollTop();
+
+ $('.logo').css({
+  opacity: function() {
+    var elementHeight = $(this).height(),
+        opacity = ((1 - (elementHeight - scrollTop) / elementHeight) * 0.05) + 0.0;
+
+    return opacity;
+  }
+});
+});

@@ -4,16 +4,28 @@
   <meta charset="UTF-8">
   <title>MeliVeloz</title>
   <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   
 </head>
 <body>
+   <div id="splash">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <img class="gif-splash" src="assets/readme-images/splash.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
+          
           <a id="menu-toggle" href="#" class="nav-btn btn-dark btn-lg toggle">
             <i class="fa fa-bars" style="color:#fff;"></i>
           </a>
@@ -29,11 +41,11 @@
         <li class="sidebar-brand">
           <a href="#top">Front End <strong>Developer</strong></a>
         </li>
-        <li>
-          <a href="/" title="">Home</a>
+        <li class="home">
+          <a  title="">Home</a>
         </li>
-        <li>
-          <a href="/about" title="">About Me</a>
+        <li class="about-me">
+          <a  title="">About Me</a>
         </li>
         <li>
           <a href="/resume" title="">Works</a>
@@ -43,18 +55,14 @@
         </li>
       
         <li>
-          <a href="/blog" title="Our Blog">Contact Me</a>
+          <a class="contactMe" href="contact.html">Contact Me</a>
         </li>
       </ul>
     </nav>
 
-  <div id="preload">
-    <h1>Hold your horses!</h1>
-    <h2>..while we load the page</h2>
-  </div>
-  <div class="container-fluid">
+  <div class="container-fluid first-section">
     <div class="col-lg-12 col-xs-12">
-      <!--<h1 class="hola">Mi logo</h1>-->
+      <img class="logo" src="assets/readme-images/28537433_2059719854259260_283549557_n.png">
 
   <div id="images">
     <img class="sequencer img-responsive" src="./images/0.png">
@@ -63,12 +71,32 @@
   <img class="scrollDown" src="assets/readme-images/scroll-down-1.png">
 </div>
 </div>
+<div class="container-fluid second-section hidden">
+  <div class="row">
+  <div class="col-lg-12 text-center">
+    <h1>Hola! Soy Melissa Veloz</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   </div>
+    
+  </div>
+  
+</div>
 
+
+   
 
    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <script type="text/javascript" src="jquery-sequencer.min.js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
+  
   
 </body>
 </html>
