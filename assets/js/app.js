@@ -96,19 +96,27 @@ $(document).ready(function()
 });
 
 $('.about-me').on('click', function(){
+  $('.three-section').addClass('hidden');
   $('.first-section').addClass('hidden');
  $('.second-section').removeClass('hidden');
 })
 
 
 $('.home').on('click', function(){
+  $('.three-section').addClass('hidden');
   $('.first-section').removeClass('hidden');
  $('.second-section').addClass('hidden');
 })
 $('.contactMe').on('click', function(){
   $('.first-section').addClass('hidden');
  $('.second-section').addClass('hidden');
- $('.five-section').removeClass('hidden');
+ $('.three-section').addClass('hidden');
+})
+
+$('.skills').on('click', function(){
+  $('.first-section').addClass('hidden');
+ $('.second-section').addClass('hidden');
+ $('.three-section').removeClass('hidden');
 })
 
   $(function(){

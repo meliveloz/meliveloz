@@ -488,7 +488,7 @@ S
   width: 100%;
 }
 
-/*Second Section*/
+/* Section*/
 .second-section{
   padding-top:10%;
   font-family: 'Mina', sans-serif;
@@ -498,12 +498,25 @@ S
   padding-top: 10%;
   font-family: 'Mina', sans-serif;
 }
+.three-section{
+  padding-top: 10%;
+  font-family: 'Mina', sans-serif;
+}
 
+/*SKILLS*/
+.skill-icon{
+  font-size: 10em;
+}
+.row-three{
+  padding-top: 6em;
+}
 /*Contact me*/
 .wizard {
     margin: 20px auto;
     background: #fff;
 }
+
+
 
     .wizard .nav-tabs {
         position: relative;
