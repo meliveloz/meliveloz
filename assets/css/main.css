@@ -525,7 +525,7 @@ S
 #splash {
   height: 100vh;
   position: fixed;
-  z-index: 10000;
+  z-index: 1000000000;
   background: black;
   width: 100%;
 }
@@ -548,6 +548,7 @@ S
 /*SKILLS*/
 .skill-icon{
   font-size: 10em;
+  color:black;
 }
 .row-three{
   padding-top: 6em;
@@ -694,4 +695,67 @@ span.round-tab:hover {
         position: absolute;
         left: 35%;
     }
+}
+
+/*arrow down*/
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: fixed;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+  z-index: 1000000;
+}
+
+.arrows path {
+  stroke: white;
+  fill: transparent;
+  stroke-width: 3px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 { 
+  animation-delay:0s;
+  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+/*SOCIAL ICON*/
+.social{
+  font-size: 5em;
+  cursor: pointer;
+  color: black;
+  margin-top: 1em;
+}
+.color-btn{
+  background: black;
+  color: white;
 }
