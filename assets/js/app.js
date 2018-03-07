@@ -99,15 +99,23 @@ $('.about-me').on('click', function(){
   $('.three-section').addClass('hidden');
   $('.first-section').addClass('hidden');
  $('.second-section').removeClass('hidden');
+ $('.six-section').addClass('hidden');
  $('#to-top').addClass('hidden');
 })
-
+$('.myWorks').on('click', function(){
+  $('.six-section').removeClass('hidden');
+  $('.three-section').addClass('hidden');
+  $('.first-section').addClass('hidden');
+ $('.second-section').addClass('hidden');
+ $('#to-top').addClass('hidden');
+})
 
 $('.home').on('click', function(){
   $('.three-section').addClass('hidden');
   $('.first-section').removeClass('hidden');
  $('.second-section').addClass('hidden');
   $('#to-top').removeClass('hidden');
+  $('.six-section').addClass('hidden');
 
 })
 $('.contactMe').on('click', function(){
@@ -115,6 +123,7 @@ $('.contactMe').on('click', function(){
  $('.second-section').addClass('hidden');
  $('.three-section').addClass('hidden');
  $('#to-top').addClass('hidden');
+ $('.six-section').addClass('hidden');
 })
 
 $('.skills').on('click', function(){
@@ -122,12 +131,13 @@ $('.skills').on('click', function(){
  $('.second-section').addClass('hidden');
  $('.three-section').removeClass('hidden');
  $('#to-top').addClass('hidden');
+ $('.six-section').addClass('hidden');
 })
 
   $(function(){
   setTimeout(function() {
      $('#splash').fadeOut(500);
-  }, 2000);
+  }, 5000);
   });
 
  /* Opacity Logo*/ 
@@ -135,7 +145,7 @@ $('.skills').on('click', function(){
 $(window).scroll(function() {
   var scrollTop = $(this).scrollTop();
 
- $('.logo').css({
+ $('.logo, .logo2').css({
   opacity: function() {
     var elementHeight = $(this).height(),
         opacity = ((1 - (elementHeight - scrollTop) / elementHeight) * 0.05) + 0.0;
