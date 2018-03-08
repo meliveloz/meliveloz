@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>MeliVeloz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -30,8 +31,8 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           
-          <a id="menu-toggle" href="#" class="nav-btn btn-dark btn-lg toggle">
-            <i class="fa fa-bars" style="color:#fff;"></i>
+          <a id="menu-toggle" href="#" class="nav-btn btn-dark btn-lg toggle ">
+            <i class="fa fa-bars" style="color:#fff;" onclick="openNav()"></i>
           </a>
           <a id="to-top" class="btn btn-lg btn-inverse" href="#top">
             <span class="sr-only">Toggle to Top Navigation</span>
@@ -39,31 +40,16 @@
           </a>
         </div>                      
     </nav>
-<nav id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <a id="menu-close" href="#" class="btn btn-danger pull-right hidden-md hidden-lg hidden-xs toggle"><i class="fa fa-times"></i></a>
-        <li class="sidebar-brand">
-          <a href="#top">Front End <strong>Developer</strong></a>
-        </li>
-        <li class="home">
-          <a  title="">Home</a>
-        </li>
-        <li class="about-me">
-          <a  title="">About Me</a>
-        </li>
-        <li class="myWorks">
-          <a>Works</a>
-        </li>
-        <li class="skills">
-          <a  title="">SKILLS</a>
-        </li>
-      
-        <li>
-          <a class="contactMe" href="contact.html">Contact Me</a>
-        </li>
-      </ul>
-    </nav>
-
+    
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a class="home" href="#">Inicio</a>
+    <a class="about-me" href="#">Sobre mi</a>
+    <a class="myWorks" ="#">Works</a>
+    <a class="skills" href="#">Skills</a>
+  </div>
+</div>
 
   <div class="container-fluid first-section">
     <div class="col-lg-12 col-xs-12">
@@ -83,7 +69,7 @@
 </div>
 <div class="container second-section hidden">
   <div class="row">
-  <div class="col-lg-12 text-center col-xs-12">
+  <div class="col-lg-12 text-center col-xs-8">
     <h1 class="animated pulse infinite">Sobre Mi ...</h1>
   </div>
   <div class="col-lg-6 col-lg-offset-3 col-xs-12">
@@ -158,11 +144,20 @@
     </div>
   </div>
 
-    <div class="six-section hidden container">
-     
-
-      
+    <div class="six-section hidden container-fluid">
+      <div class="row">
+        <div class="col-lg-12 text-center labmusic proyect animated rotateInUpRight">
+          <h1 class="labmusic-title">Labmusic <i class="fas fa-headphones"></i></h1>
+        </div>
+           <div class="row">
+        <div class="col-lg-12 text-center animated rotateInUpRight">
+          <h1 class="labmusic-title">Labmusic <i class="fas fa-headphones"></i></h1>
+        </div>
+      </div>
+      </div>
     </div>
+   
+
 
 
    

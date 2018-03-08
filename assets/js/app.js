@@ -137,7 +137,7 @@ $('.skills').on('click', function(){
   $(function(){
   setTimeout(function() {
      $('#splash').fadeOut(500);
-  }, 5000);
+  }, 2000);
   });
 
  /* Opacity Logo*/ 
@@ -154,3 +154,11 @@ $(window).scroll(function() {
   }
 });
 });
+
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
