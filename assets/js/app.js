@@ -19,8 +19,9 @@ $(function () {
              });
 });
 
-
-
+$(window).scroll(function() {
+    $('.myimage').toggleClass('relative', $(window).scrollTop() + $(window).height() > $(document).height() - $('.newdiv').height());
+});
 /*$(function(){
   setTimeout(function(){
 $('.fly-in-text').removeClass('hola');
@@ -33,7 +34,7 @@ $(document).ready(function()
   {
     $('body,html').animate({
       scrollTop: 0}, 
-      2500);
+      6000);
   });
 
   //Easing Scroll replace Anchor name in URL and Offset Position
@@ -96,6 +97,8 @@ $(document).ready(function()
 });
 
 $('.about-me').on('click', function(){
+  $('.sectionxs').addClass('hidden');
+  $('html').css("overflow-y", "hidden");
   $('.three-section').addClass('hidden');
   $('.first-section').addClass('hidden');
  $('.second-section').removeClass('hidden');
@@ -103,6 +106,8 @@ $('.about-me').on('click', function(){
  $('#to-top').addClass('hidden');
 })
 $('.myWorks').on('click', function(){
+   $('.sectionxs').addClass('hidden');
+ // $('html').css("overflow-y", "hidden");
   $('.six-section').removeClass('hidden');
   $('.three-section').addClass('hidden');
   $('.first-section').addClass('hidden');
@@ -111,6 +116,8 @@ $('.myWorks').on('click', function(){
 })
 
 $('.home').on('click', function(){
+   $('.sectionxs').removeClass('hidden');
+  $('html').css("overflow-y", "scroll");
   $('.three-section').addClass('hidden');
   $('.first-section').removeClass('hidden');
  $('.second-section').addClass('hidden');
@@ -119,6 +126,8 @@ $('.home').on('click', function(){
 
 })
 $('.contactMe').on('click', function(){
+   $('.sectionxs').addClass('hidden');
+  $('html').css("overflow-y", "hidden");
   $('.first-section').addClass('hidden');
  $('.second-section').addClass('hidden');
  $('.three-section').addClass('hidden');
@@ -127,6 +136,8 @@ $('.contactMe').on('click', function(){
 })
 
 $('.skills').on('click', function(){
+   $('.sectionxs').addClass('hidden');
+  $('html').css("overflow-y", "hidden");
   $('.first-section').addClass('hidden');
  $('.second-section').addClass('hidden');
  $('.three-section').removeClass('hidden');
@@ -162,3 +173,13 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
+
+
+$('.project').hover(
+    function() {
+      $(this).addClass('animated infinite pulse');
+    },
+    function() {
+      $(this).removeClass('animated infinite pulse');
+    }
+ );
